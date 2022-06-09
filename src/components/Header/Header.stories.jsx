@@ -19,6 +19,13 @@ LoggedIn.args = {
     name: 'Jane Doe',
   },
 };
+export const WithMenuItems = Template.bind({});
+WithMenuItems.args = {
+  user: {
+    name: 'Jane Doe',
+  },
+  menuItems: [{label: 'Home', selected:true}, {label: 'About', selected:false}, {label: 'Contact', selected:false},]
+};
 
 export const LoggedOut = Template.bind({});
 LoggedOut.args = {};

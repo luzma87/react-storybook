@@ -1,10 +1,15 @@
-.wrapper {
-  font-family: var(--font-family);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
+.container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  color: var(--primary-bg-color)
+}
+
+.wrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 30px 20px 0 20px;
   justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+  height: 78px;
 }
 
 .wrapper svg {
@@ -21,12 +26,3 @@
   vertical-align: top;
 }
 
-.wrapper button + button {
-  margin-left: 10px;
-}
-
-.wrapper .welcome {
-  color: #333;
-  font-size: 14px;
-  margin-right: 10px;
-}

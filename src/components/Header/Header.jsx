@@ -1,43 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Button } from '../Button/Button';
 import './header.css';
+import Logo from '../Icons/icons/Logo'
+import AccountInactive from '../Icons/icons/AccountInactive'
+import MenuItem from '../MenuItem/MenuItem'
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Header = ({ user, menuItems, onLogin,onCreateAccount, onLogout }) => (
   <header>
-    <div className="wrapper">
-      <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>Acme</h1>
+    <div className="container wrapper">
+      <div className="container logo-container">
+        <Logo fill="#1D1E41"/>
+        <h1>Logo</h1>
       </div>
-      <div>
+      <div className="container menu-items-container">
+        {user && menuItems.map(item => <MenuItem label={item.label} isSelected={item.selected}/>)}
+      </div>
+      <div className="container account-container">
         {user ? (
-          <>
-            <span className="welcome">
-              Welcome, <b>{user.name}</b>!
-            </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
-          </>
+          <AccountInactive fill="#EFC01A" size={32} onClick={onLogout} />
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button backgroundColor="white" size="small" onClick={onCreateAccount} label="Signup" />
+            <Button primary size="small" onClick={onLogin} label="Log in" />
           </>
         )}
       </div>
@@ -50,8 +35,13 @@ Header.propTypes = {
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
   onCreateAccount: PropTypes.func.isRequired,
+  menuItems: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    selected:PropTypes.bool
+  }))
 };
 
 Header.defaultProps = {
   user: null,
+  menuItems: []
 };
