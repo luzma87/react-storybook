@@ -27,6 +27,3 @@ const Template = (args) => (<div className="icons-grid">
   </div>)
 
 export const Icons = Template.bind({})
-Icons.args = {
-  fill: 'pink',
-}
