@@ -13,6 +13,14 @@ const variants = [
 const styles = [
   'primary',
   'secondary',
+  'mustard',
+  'blue',
+  'coral-red',
+  'light-blue',
+  'light-mustard',
+  'white',
+  'gray',
+  'charcoal',
 ]
 
 

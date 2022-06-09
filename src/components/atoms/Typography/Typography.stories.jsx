@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography } from './Typography';
 
 export default {
-  title: 'Atoms/Typography',
+  title: 'Typography',
   component: Typography,
 };
 
@@ -43,8 +43,48 @@ Primary.args = {
   style: 'primary',
   children: 'Este es un texto primary'
 };
-export const Seconday = Template.bind({});
-Seconday.args = {
+export const Secondary = Template.bind({});
+Secondary.args = {
   style: 'secondary',
   children: 'Este es un texto secondary'
+};
+export const Blue = Template.bind({});
+Blue.args = {
+  style: 'blue',
+  children: 'Este es un texto blue'
+};
+export const Mustard = Template.bind({});
+Mustard.args = {
+  style: 'mustard',
+  children: 'Este es un texto mustard'
+};
+export const CoralRed = Template.bind({});
+CoralRed.args = {
+  style: 'coral-red',
+  children: 'Este es un texto coral-red'
+};
+export const LightBlue = Template.bind({});
+LightBlue.args = {
+  style: 'light-blue',
+  children: 'Este es un texto light-blue'
+};
+export const LightMustard = Template.bind({});
+LightMustard.args = {
+  style: 'light-mustard',
+  children: 'Este es un texto light-mustard'
+};
+export const White = Template.bind({});
+White.args = {
+  style: 'white',
+  children: 'Este es un texto white'
+};
+export const Gray = Template.bind({});
+Gray.args = {
+  style: 'gray',
+  children: 'Este es un texto gray'
+};
+export const Charcoal = Template.bind({});
+Charcoal.args = {
+  style: 'charcoal',
+  children: 'Este es un texto charcoal'
 };

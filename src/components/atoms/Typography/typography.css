@@ -45,3 +45,35 @@
 .typography--secondary {
   color: var(--secondary-bg-color)
 }
+
+.typography--mustard {
+  color: var(--brand-mustard)
+}
+
+.typography--blue {
+  color: var(--brand-blue)
+}
+
+.typography--coral-red {
+  color: var(--coral-red)
+}
+
+.typography--light-blue {
+  color: var(--light-blue)
+}
+
+.typography--light-mustard {
+  color: var(--light-mustard)
+}
+
+.typography--white {
+  color: var(--white)
+}
+
+.typography--gray {
+  color: var(--gray)
+}
+
+.typography--charcoal{
+  color: var(--charcoal)
+}
