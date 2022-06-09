@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { Header } from './Header';
+import { MenuBar } from './MenuBar';
 
 export default {
-  title: 'Molecules/Header',
-  component: Header,
+  title: 'Molecules/MenuBar',
+  component: MenuBar,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
   },
 };
 
-const Template = (args) => <Header {...args} />;
+const Template = (args) => <MenuBar {...args} />;
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {

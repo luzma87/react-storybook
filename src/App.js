@@ -1,5 +1,5 @@
 import './App.css'
-import {Header} from './components/molecules/Header/Header'
+import {MenuBar} from './components/molecules/MenuBar/MenuBar'
 import {useState} from 'react'
 import {Button} from './components/atoms/Button/Button'
 import {Typography} from './components/atoms/Typography/Typography'
@@ -11,7 +11,7 @@ function App() {
   const [userCount, setUserCount] = useState(1)
 
   return (<>
-    <Header
+    <MenuBar
       onLogin={() => {
         setUser({name: 'Luzma'})
         console.log('Login')
