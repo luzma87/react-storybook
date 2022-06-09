@@ -1,11 +1,16 @@
 .menu-item {
-    height: 48px;
+    height: 66px;
     width: fit-content;
     padding: 0 40px;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.menu-item button {
+    all: unset;
+    cursor: pointer;
 }
 
 .menu-item-selected-marker {
