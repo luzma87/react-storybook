@@ -12,7 +12,7 @@ export const Page = () => {
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
-        onCreateAccount={() => setUser({ name: 'Jane Doe' })}
+        onCreateAccount={() => setUser({ name: 'New user' })}
       />
 
       <section>
