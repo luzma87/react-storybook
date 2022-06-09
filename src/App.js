@@ -3,6 +3,7 @@ import {MenuBar} from './components/molecules/MenuBar/MenuBar'
 import {useState} from 'react'
 import Home from './demoPages/Home'
 import Grid from './demoPages/Grid'
+import Flex from './demoPages/Flex'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -10,7 +11,7 @@ function App() {
   const [menuItems, setMenuItems] = useState([
     {label: 'Home', selected:true, content: <Home/>},
     {label: 'Grid', selected:false, content: <Grid/>},
-    {label: 'Flexbox', selected:false},
+    {label: 'Flexbox', selected:false, content: <Flex/>},
   ])
 
   const getContent = () => {

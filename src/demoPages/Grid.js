@@ -1,33 +1,22 @@
 import React from 'react'
-import {Typography} from '../components/atoms/Typography/Typography'
 import './grid.css'
-
-const fillItems = (count, parent) => {
-  return [...Array(count).keys()].map(n=> {
-    const id = `${parent}_${n + 1}`
-    return (<div key={id} className={['grid-item', id].join(' ')}>
-        <Typography variant="caption">
-          {`celda ${n + 1}`}
-        </Typography>
-      </div>)
-  })
-}
-
-const Demo = ({label, code, id, count}) => {
-  return (
-    <div className="demo-container">
-      <Typography>{label}</Typography>
-      <Typography variant="code">{code}</Typography>
-      <div className={["demo-container", id].join(' ')}>
-        {fillItems(count, id)}
-      </div>
-    </div>
-  )
-}
+import Demo from './Demo'
+import {Typography} from '../components/atoms/Typography/Typography'
 
 const Grid = (props) => {
   return (
     <div className="grid-demos-container">
+
+      <Typography>
+        <a href="https://grid.malven.co/" target="_blank" rel="noopener noreferrer">
+          Malven cheatsheet
+        </a>
+      </Typography>
+      <Typography>
+        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener noreferrer">
+          CSS tricks cheatsheet
+        </a>
+      </Typography>
 
       <Demo
         label="Grid con columnas fijas"
