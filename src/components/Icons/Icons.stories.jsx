@@ -15,11 +15,12 @@ const Icon = ({icon, label}) => {
 export default {
   title: 'Icons',
   component: Icon,
+  argTypes: {
+    fill: { control: 'color' },
+  },
 }
 
-const fill = '#666'
-
-const Template = (args) => (<div className="icons-grid">
+const Template = ({fill}) => (<div className="icons-grid">
     <Icon icon={<Logo fill={fill}/>} label={'Logo'}/>
     <Icon icon={<AccountActive fill={fill}/>} label={'Account Active'}/>
     <Icon icon={<AccountInactive fill={fill}/>} label={'Account Inactive'}/>
@@ -27,3 +28,6 @@ const Template = (args) => (<div className="icons-grid">
   </div>)
 
 export const Icons = Template.bind({})
+Icons.args = {
+  fill: 'pink',
+}

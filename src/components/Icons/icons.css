@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items:center;
     justify-content:center;
+    text-align: center;
     gap: 8px;
     font-size: 0.8em;
     border: solid 1px #ddd;
