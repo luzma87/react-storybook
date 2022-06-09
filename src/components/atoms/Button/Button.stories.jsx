@@ -15,47 +15,46 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
+export const Light = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Primary Button',
+Light.args = {
+  label: 'Light Button',
 };
 
-export const PrimaryLarge = Template.bind({});
-PrimaryLarge.args = {
-  primary: true,
-  size: 'large',
-  label: 'Primary Button Large',
+export const LightDeactive = Template.bind({});
+LightDeactive.args = {
+  label: 'Light Button',
+  deactive: true,
 };
 
-export const PrimarySmall = Template.bind({});
-PrimarySmall.args = {
-  primary: true,
-  size: 'small',
-  label: 'Primary Button Small',
+export const LightLarge = Template.bind({});
+LightLarge.args = {
+  label: 'Large Button',
+  size: 'large'
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Secondary Button',
+  variant: 'secondary',
 };
 
-export const SecondaryLarge = Template.bind({});
-SecondaryLarge.args = {
+export const Dark = Template.bind({});
+Dark.args = {
+  label: 'Dark Button',
+  variant: 'dark',
+};
+
+export const DarkDeactive = Template.bind({});
+DarkDeactive.args = {
+  label: 'Dark Button',
+  deactive: true,
+  variant: 'dark',
+};
+
+export const DarkLarge = Template.bind({});
+DarkLarge.args = {
+  label: 'Large Button',
   size: 'large',
-  label: 'Secondary Button Large',
-};
-
-export const SecondarySmall = Template.bind({});
-SecondarySmall.args = {
-  size: 'small',
-  label: 'Secondary Button Small',
-};
-
-export const FullWidth = Template.bind({});
-FullWidth.args = {
-  size: 'small',
-  label: 'Full Width Button',
-  fullWidth: true
+  variant: 'dark',
 };

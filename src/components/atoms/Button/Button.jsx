@@ -1,54 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
+import {Typography} from '../Typography/Typography'
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({ primary, backgroundColor, size, label, fullWidth, ...props }) => {
-  const mode = primary ? 'button--primary' : 'button--secondary';
-  const fullWidthClass = fullWidth ? 'button--full-width' : ''
+const variants = ['light', 'dark', 'secondary']
+
+export const Button = ({ variant, primary, size, label, deactive, ...props }) => {
+  const mode = `button--${variant}`
+  const deactiveClass = deactive ? 'button--deactive' : ''
   return (
     <button
       type="button"
-      className={['button', `button--${size}`, mode, fullWidthClass].join(' ')}
-      style={backgroundColor && { backgroundColor }}
+      className={['button', `button--${size}`, mode, deactiveClass].join(' ')}
+      disabled={deactive}
       {...props}
     >
-      {label}
+      <Typography variant="button">
+        {label}
+      </Typography>
     </button>
   );
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
+  variant: PropTypes.oneOf(variants),
   primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
-  backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
+  size: PropTypes.oneOf([ 'medium', 'large']),
   label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
   onClick: PropTypes.func,
-
-  fullWidth: PropTypes.bool,
+  deactive: PropTypes.bool,
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
+  variant: 'light',
   primary: false,
+  deactive: false,
   size: 'medium',
   onClick: undefined,
-  fullWidth: false,
 };

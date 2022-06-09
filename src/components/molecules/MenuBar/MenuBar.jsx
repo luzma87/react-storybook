@@ -21,8 +21,8 @@ export const MenuBar = ({ user, menuItems, onMenuClick, onLogin,onCreateAccount,
           <AccountInactive fill="#EFC01A" size={32} onClick={onLogout} />
         ) : (
           <>
-            <Button backgroundColor="white" onClick={onCreateAccount} label="Signup"/>
-            <Button primary onClick={onLogin} label="Log in" />
+            <Button variant="secondary" onClick={onCreateAccount} label="Signup"/>
+            <Button onClick={onLogin} label="Log in" />
           </>
         )}
       </div>
