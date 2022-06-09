@@ -2,6 +2,7 @@ import './App.css'
 import {Header} from './components/molecules/Header/Header'
 import {useState} from 'react'
 import {Button} from './components/atoms/Button/Button'
+import {Typography} from './components/atoms/Typography/Typography'
 
 const menuItems = [{label: 'Home', selected:true}, {label: 'About', selected:false}, {label: 'Contact', selected:false},]
 
@@ -28,7 +29,9 @@ function App() {
       menuItems={menuItems}
     />
     <div className="App">
-      Storybook demo
+      <Typography variant="title">
+        Storybook demo
+      </Typography>
       <div className="buttons">
         <Button label={'Button demo'} onClick={() => console.log('on click')}/>
         <Button label={'Button demo'} primary onClick={() => console.log('on click')}/>

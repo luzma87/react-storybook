@@ -1,0 +1,47 @@
+.typography {
+  font-family: var(--font-family);
+}
+
+.typography--title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 92px;
+}
+
+.typography--subtitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.typography--highlight {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.typography--button {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.typography--text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.typography--caption {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.typography--primary {
+  color: var(--primary-bg-color)
+}
+
+.typography--secondary {
+  color: var(--secondary-bg-color)
+}
