@@ -1,10 +1,11 @@
 import * as React from "react"
 import PropTypes from 'prop-types'
 
-const MenuHamburger = ({fill, ...props}) => (
+const MenuHamburger = ({fill, size,...props}) => (
   <svg
-    width={48}
-    height={48}
+    width={size}
+    height={size}
+    viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -20,11 +21,13 @@ const MenuHamburger = ({fill, ...props}) => (
 )
 
 MenuHamburger.propTypes = {
-  fill: PropTypes.string
+  fill: PropTypes.string,
+  size: PropTypes.number,
 }
 
 MenuHamburger.defaultProps = {
-  fill: '#1D1E41'
+  fill: '#1D1E41',
+  size: 48,
 }
 
 export default MenuHamburger

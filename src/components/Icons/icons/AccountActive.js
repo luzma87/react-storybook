@@ -1,9 +1,10 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 
-const AccountActive = ({fill, ...props}) => (<svg
-    width={48}
-    height={48}
+const AccountActive = ({fill,size, ...props}) => (<svg
+    width={size}
+    height={size}
+    viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -15,11 +16,13 @@ const AccountActive = ({fill, ...props}) => (<svg
   </svg>)
 
 AccountActive.propTypes = {
-  fill: PropTypes.string
+  fill: PropTypes.string,
+  size: PropTypes.number,
 }
 
 AccountActive.defaultProps = {
-  fill: '#1D1E41'
+  fill: '#1D1E41',
+  size: 48
 }
 
 export default AccountActive
