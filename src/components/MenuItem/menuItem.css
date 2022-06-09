@@ -1,0 +1,17 @@
+.menu-item {
+    height: 48px;
+    width: fit-content;
+    padding: 0 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.menu-item-selected-marker {
+    --line-height: 4px;
+    width: 100%;
+    height: var(--line-height);
+    border-radius: var(--line-height);
+    background-color: var(--secondary-bg-color);
+}
