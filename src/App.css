@@ -1,15 +1,29 @@
 :root {
-  --primary-bg-color: #1ea7fd;
-  --primary-bg-hover-color: #2888c7;
-  --primary-text-color: #fff;
+  --brand-mustard: #EFC01A;
+  --brand-mustard-pale: #e1c770;
+  --brand-blue: #1D1E41;
+  --brand-blue-pale: #323572;
+  --coral-red: #DA6951;
+  --light-blue: #DDE2EF;
+  --white: #FFFFFF;
+  --gray: #B0B0B0;
+  --charcoal: #3F3F3F;
 
-  --secondary-bg-color: #fff;
-  --secondary-bg-hover-color: #eee;
-  --secondary-text-color: #333;
+  --primary-bg-color: var(--brand-blue);
+  --primary-bg-hover-color: var(--brand-blue-pale);
+  --primary-text-color: var(--brand-mustard);
 
-  --border-radius: 3em;
+  --secondary-bg-color: var(--brand-mustard);
+  --secondary-bg-hover-color: var(--brand-mustard-pale);
+  --secondary-text-color: var(--brand-blue);
 
-  --font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  --border-radius: 12px;
+
+  --font-family: 'Poppins';
+}
+
+* {
+  font-family: var(--font-family);
 }
 
 .App {
