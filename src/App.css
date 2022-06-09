@@ -1,20 +1,19 @@
 :root {
   --brand-mustard: #EFC01A;
-  --brand-mustard-pale: #e1c770;
   --brand-blue: #1D1E41;
-  --brand-blue-pale: #323572;
   --coral-red: #DA6951;
   --light-blue: #DDE2EF;
+  --light-mustard: #FAEEC2;
   --white: #FFFFFF;
   --gray: #B0B0B0;
   --charcoal: #3F3F3F;
 
   --primary-bg-color: var(--brand-blue);
-  --primary-bg-hover-color: var(--brand-blue-pale);
+  --primary-bg-hover-color: var(--light-blue);
   --primary-text-color: var(--brand-mustard);
 
   --secondary-bg-color: var(--brand-mustard);
-  --secondary-bg-hover-color: var(--brand-mustard-pale);
+  --secondary-bg-hover-color: var(--light-mustard);
   --secondary-text-color: var(--brand-blue);
 
   --border-radius: 12px;
