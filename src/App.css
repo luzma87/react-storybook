@@ -36,3 +36,17 @@
   font-size: calc(10px + 2vmin);
   gap: 32px;
 }
+
+.buttons {
+  display: flex;
+  gap:16px;
+}
+
+.menu {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:8px
+}

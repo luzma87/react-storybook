@@ -26,7 +26,18 @@ function App() {
     />
     <div className="App">
       Storybook demo
-      <Button label={'Button demo'} onClick={() => console.log('on click')}/>
+      <div className="buttons">
+        <Button label={'Button demo'} onClick={() => console.log('on click')}/>
+        <Button label={'Button demo'} primary onClick={() => console.log('on click')}/>
+      </div>
+
+      <div className="menu">
+        <Button label="elemento 1" fullWidth />
+        <Button label="elemento 2" fullWidth />
+        <Button label="elemento 3" fullWidth />
+        <Button label="elemento 4" fullWidth />
+      </div>
+
     </div>
   </>)
 }
