@@ -1,3 +1,17 @@
+:root {
+  --primary-bg-color: #1ea7fd;
+  --primary-bg-hover-color: #2888c7;
+  --primary-text-color: #fff;
+
+  --secondary-bg-color: #fff;
+  --secondary-bg-hover-color: #eee;
+  --secondary-text-color: #333;
+
+  --border-radius: 3em;
+
+  --font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
 .App {
   text-align: center;
   min-height: 100vh;
