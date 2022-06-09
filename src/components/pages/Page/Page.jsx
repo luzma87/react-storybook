@@ -3,6 +3,8 @@ import React from 'react';
 import { Header } from '../../molecules/Header/Header';
 import './page.css';
 
+const menuItems = [{label: 'Home', selected:true}, {label: 'About', selected:false}, {label: 'Contact', selected:false},]
+
 export const Page = () => {
   const [user, setUser] = React.useState(null);
 
@@ -13,6 +15,7 @@ export const Page = () => {
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
         onCreateAccount={() => setUser({ name: 'New user' })}
+        menuItems={menuItems}
       />
 
       <section>

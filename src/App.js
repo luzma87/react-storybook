@@ -3,6 +3,8 @@ import {Header} from './components/molecules/Header/Header'
 import {useState} from 'react'
 import {Button} from './components/atoms/Button/Button'
 
+const menuItems = [{label: 'Home', selected:true}, {label: 'About', selected:false}, {label: 'Contact', selected:false},]
+
 function App() {
   const [user, setUser] = useState(null)
   const [userCount, setUserCount] = useState(1)
@@ -23,6 +25,7 @@ function App() {
         console.log('create account')
       }}
       user={user}
+      menuItems={menuItems}
     />
     <div className="App">
       Storybook demo
