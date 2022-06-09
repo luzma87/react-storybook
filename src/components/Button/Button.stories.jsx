@@ -52,3 +52,10 @@ SecondarySmall.args = {
   size: 'small',
   label: 'Secondary Button Small',
 };
+
+export const FullWidth = Template.bind({});
+FullWidth.args = {
+  size: 'small',
+  label: 'Full Width Button',
+  fullWidth: true
+};

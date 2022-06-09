@@ -5,12 +5,13 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, backgroundColor, size, label, fullWidth, ...props }) => {
   const mode = primary ? 'button--primary' : 'button--secondary';
+  const fullWidthClass = fullWidth ? 'button--full-width' : ''
   return (
     <button
       type="button"
-      className={['button', `button--${size}`, mode].join(' ')}
+      className={['button', `button--${size}`, mode, fullWidthClass].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -40,6 +41,8 @@ Button.propTypes = {
    * Optional click handler
    */
   onClick: PropTypes.func,
+
+  fullWidth: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -47,4 +50,5 @@ Button.defaultProps = {
   primary: false,
   size: 'medium',
   onClick: undefined,
+  fullWidth: false,
 };
