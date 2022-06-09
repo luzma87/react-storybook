@@ -25,9 +25,10 @@ const colors = [
 
 
 export const Typography = ({ variant, color, children, ...props }) => {
+  const colorClass = color ? `typography--${color}` : ''
   return (
     <div
-      className={['typography', `typography--${variant}`, `typography--${color}`].join(' ')}>
+      className={['typography', `typography--${variant}`, colorClass].join(' ')}>
       {children}
     </div>
   );
@@ -35,7 +36,6 @@ export const Typography = ({ variant, color, children, ...props }) => {
 
 Typography.defaultProps = {
   variant: 'text',
-  color: 'primary'
 };
 
 Typography.propTypes = {
