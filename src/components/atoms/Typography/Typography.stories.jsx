@@ -4,6 +4,9 @@ import { Typography } from './Typography';
 export default {
   title: 'Typography',
   component: Typography,
+  argTypes: {
+    children: { control: 'text' },
+  },
 };
 
 const TypographyGroup = ({children}) => {
@@ -64,7 +67,15 @@ export const AllColors = () => (
   </div>
 )
 
-export const Demo = (args) => <Typography {...args} />
+export const Demo = (args) => {
+  const {variant, color} = args
+  const variantText = variant ? `con variant <${variant}>` : 'sin variant'
+  const colorText = color ? `con color <${color}>` : 'sin color'
+  const defaultText = `Este es un texto ${variantText}, ${colorText}`
+  return (<Typography {...args} >
+    {args.children.trim() || defaultText}
+  </Typography>)
+}
 Demo.args = {
-  children: 'Este Es Un Texto de demo'
+  children: 'Este Es Un Texto de demo, vacía para el texto default'
 };

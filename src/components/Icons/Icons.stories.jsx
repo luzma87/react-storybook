@@ -17,17 +17,17 @@ export default {
   component: Icon,
   argTypes: {
     fill: { control: 'color' },
+    size: { control: 'number' },
   },
 }
 
-const Template = ({fill}) => (<div className="icons-grid">
-    <Icon icon={<Logo fill={fill}/>} label={'Logo'}/>
-    <Icon icon={<AccountActive fill={fill}/>} label={'Account Active'}/>
-    <Icon icon={<AccountInactive fill={fill}/>} label={'Account Inactive'}/>
-    <Icon icon={<MenuHamburger fill={fill}/>} label={'Menu Hamburger'}/>
-  </div>)
-
-export const Icons = Template.bind({})
+export const Icons = ({fill, size}) => (<div className="icons-grid">
+  <Icon icon={<Logo fill={fill} size={size} />} label={'Logo'}/>
+  <Icon icon={<AccountActive fill={fill} size={size}/>} label={'Account Active'}/>
+  <Icon icon={<AccountInactive fill={fill} size={size}/>} label={'Account Inactive'}/>
+  <Icon icon={<MenuHamburger fill={fill} size={size}/>} label={'Menu Hamburger'}/>
+</div>)
 Icons.args = {
   fill: 'pink',
+  size: 48
 }
