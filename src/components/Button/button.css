@@ -1,6 +1,6 @@
 .button {
   font-family: var(--font-family);
-  font-weight: 700;
+  font-weight: 600;
   border: 0;
   border-radius: var(--border-radius);
   cursor: pointer;
@@ -33,7 +33,7 @@
 
 .button--medium {
   font-size: 14px;
-  padding: 11px 20px;
+  padding: 10px 20px;
 }
 
 .button--large {
