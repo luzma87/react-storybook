@@ -35,6 +35,7 @@ export const AllSizes = () => (
     <TypographyWrapper variant="button" />
     <TypographyWrapper variant="text" />
     <TypographyWrapper variant="caption" />
+    <TypographyWrapper variant="code" />
   </TypographyGroup>
 )
 

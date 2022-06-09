@@ -9,6 +9,7 @@ const variants = [
   'button',
   'text',
   'caption',
+  'code'
 ]
 const colors = [
   'primary',
@@ -22,7 +23,6 @@ const colors = [
   'gray',
   'charcoal',
 ]
-
 
 export const Typography = ({ variant, color, children, ...props }) => {
   const colorClass = color ? `typography--${color}` : ''

@@ -2,6 +2,17 @@
   font-family: var(--font-family);
 }
 
+.typography--code {
+  font-family: monospace;
+  white-space: pre;
+  font-weight: 200;
+  font-size: 14px;
+  margin: 12px 0;
+  text-align: start;
+  padding: 8px;
+  background: var(--gray);
+}
+
 .typography--title {
   font-weight: 900;
   font-size: 72px;
