@@ -1,7 +1,7 @@
 import './App.css'
-import {Header} from './components/Header/Header'
+import {Header} from './components/molecules/Header/Header'
 import {useState} from 'react'
-import {Button} from './components/Button/Button'
+import {Button} from './components/atoms/Button/Button'
 
 function App() {
   const [user, setUser] = useState(null)

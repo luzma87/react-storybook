@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Header } from '../Header/Header';
+import { Header } from '../../molecules/Header/Header';
 import './page.css';
 
 export const Page = () => {
-  const [user, setUser] = React.useState();
+  const [user, setUser] = React.useState(null);
 
   return (
     <article>

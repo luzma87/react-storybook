@@ -13,7 +13,7 @@ const Icon = ({icon, label}) => {
 }
 
 export default {
-  title: 'Example/Icons',
+  title: 'Icons',
   component: Icon,
 }
 

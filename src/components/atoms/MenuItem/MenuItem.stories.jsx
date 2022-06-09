@@ -2,7 +2,7 @@ import React from 'react';
 import MenuItem from './MenuItem'
 
 export default {
-  title: 'Example/MenuItem',
+  title: 'Atoms/MenuItem',
   component: MenuItem,
 };
 

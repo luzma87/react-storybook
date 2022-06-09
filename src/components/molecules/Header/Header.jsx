@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '../Button/Button';
+import { Button } from '../../atoms/Button/Button';
 import './header.css';
-import Logo from '../Icons/icons/Logo'
-import AccountInactive from '../Icons/icons/AccountInactive'
-import MenuItem from '../MenuItem/MenuItem'
+import Logo from '../../Icons/icons/Logo'
+import AccountInactive from '../../Icons/icons/AccountInactive'
+import MenuItem from '../../atoms/MenuItem/MenuItem'
 
 export const Header = ({ user, menuItems, onLogin,onCreateAccount, onLogout }) => (
   <header>
