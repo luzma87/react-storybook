@@ -4,6 +4,7 @@ import {useState} from 'react'
 import Home from './demoPages/Home'
 import Grid from './demoPages/Grid'
 import Flex from './demoPages/Flex'
+import Images from './demoPages/Images'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -12,6 +13,7 @@ function App() {
     {label: 'Home', selected:true, content: <Home/>},
     {label: 'Grid', selected:false, content: <Grid/>},
     {label: 'Flexbox', selected:false, content: <Flex/>},
+    {label: 'Imágenes', selected:false, content: <Images/>},
   ])
 
   const getContent = () => {
